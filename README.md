@@ -20,7 +20,7 @@ LeNet-5 is a convolutional neural network architecture designed by Yann LeCun et
 
 You can read the paper here:
 
-[http://vision.stanford.edu/cs598_spring07/papers/Lecun98.pdf](http://vision.stanford.edu/cs598_spring07/papers/Lecun98.pdf)
+[GradientBased Learning Applied to Document Recognition](http://vision.stanford.edu/cs598_spring07/papers/Lecun98.pdf)
 
 ## Model Architecture
 
