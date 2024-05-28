@@ -12,6 +12,7 @@ This repository contains a PyTorch implementation of the LeNet-5 neural network 
 - [Usage](#usage)
   - [Training](#training)
 - [Early Stopping](#early-stopping)
+- [Results](#results)
 - [Contributing](#contributing)
 
 ## Introduction
@@ -60,7 +61,7 @@ python main.py
 
 - `--batch_size`: Batch size for training (default: 32)
 - `--learning_rate`: Learning rate for the optimizer (default: 1e-3)
-- `--epochs`: Number of epochs to train for (default: 10)
+- `--epochs`: Number of epochs to train for (default: 20)
 - `--gamma`: Gamma value for the loss function (default: 0.7)
 - `--save_model`: Save the trained model
 - `--patience`: Patience for early stopping (default: 3)
@@ -68,6 +69,12 @@ python main.py
 ## Early Stopping
 
 This implementation includes early stopping to prevent overfitting. Early stopping is based on the validation loss and will stop training if the validation loss does not improve for a specified number of epochs (patience).
+
+## Results
+
+Here are the results from training with the default parameters:
+
+![Results](plots/training_results.png)
 
 ## Contributing
 

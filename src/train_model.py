@@ -22,7 +22,8 @@ def train(model, device, train_loader, optimizer, epoch, criterion, writer):
                 epoch, batch_idx * len(data), len(train_loader.dataset),
                 100. * batch_idx / len(train_loader), loss.item()))
     
-    writer.add_scalar('Loss/train', loss.item(), epoch * len(train_loader) + batch_idx)
+    train_loss /= len(train_loader.dataset)
+    writer.add_scalar('Loss/train', train_loss, epoch * len(train_loader) + batch_idx)
     writer.add_scalar('Accuracy/train', 100. * correct / len(train_loader.dataset), epoch * len(train_loader) + batch_idx)
             
 

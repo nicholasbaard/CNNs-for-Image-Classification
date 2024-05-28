@@ -8,14 +8,14 @@ import argparse
 from lenet import LeNet5
 from get_mnist import get_mnist
 from train_model import train, test
-
+from utils import plot_scalars
 
 def main():
     
     parser = argparse.ArgumentParser()
     parser.add_argument('--batch_size', type=int, default=32, help='Batch size for training')
     parser.add_argument('--learning_rate', type=float, default=1e-3, help='Learning rate for the optimizer')
-    parser.add_argument('--epochs', type=int, default=10, help='Number of epochs to train for')
+    parser.add_argument('--epochs', type=int, default=20, help='Number of epochs to train for')
     parser.add_argument('--gamma', type=float, default=0.7, help='Gamma value for the loss function')
     parser.add_argument('--save_model', action='store_true', help='Save the trained model')
     parser.add_argument('--patience', type=int, default=3, help='Patience for early stopping')
